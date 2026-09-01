@@ -1,2 +1,6 @@
+/* GLOBAL */
 @import url("./css/global/global.css");
 @import url("./css/global/header.css");
+
+/* HOME */
+@import url("./css/home/home.css");
