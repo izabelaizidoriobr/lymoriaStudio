@@ -136,8 +136,13 @@
 }
 
 @media (max-width: 769px) {
+    .Solucoes-bg {
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+
     .title-content {
-        max-width: 420px;
+        max-width: 100%;
         margin-top: 64px;
     }
 
