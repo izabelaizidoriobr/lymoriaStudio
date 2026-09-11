@@ -45,3 +45,29 @@ menuLinks.forEach(link => {
     });
 
 });
+
+/* PARALLAX - CTA */
+
+const ctaSection = document.querySelector(".cta-section");
+const ctaBackground = document.querySelector(".cta-background");
+
+function updateParallax() {
+
+    if (!ctaSection || !ctaBackground) return;
+
+    const sectionTop = ctaSection.offsetTop;
+    const sectionHeight = ctaSection.offsetHeight;
+
+    const scrollPosition = window.scrollY;
+
+    const distance = scrollPosition - sectionTop;
+
+    const movement = distance * 0.15;
+
+    ctaBackground.style.transform = `translateY(${movement}px)`;
+}
+
+
+window.addEventListener("scroll", updateParallax);
+
+window.addEventListener("load", updateParallax);

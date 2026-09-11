@@ -1,148 +1,625 @@
 /* Base / Mobile */
+
 .heroSection {
+
     position: relative;
+
     min-height: 100vh;
+
     display: flex;
+
     align-items: center;
+
     background-image: linear-gradient(to right,
+
             rgba(15, 8, 25, 0.9) 0%,
+
             rgba(15, 8, 25, 0.6) 100%),
+
         url('/assets/home_images/hero/Hero-img_MOBILE.ver.png');
+
     background-size: cover;
+
     background-position: center;
+
     color: #FDFFFC;
+
     padding: 2rem 1.5rem;
+
 }
 
 .hero_container {
+
     width: 100%;
+
     max-width: 1440px;
+
     margin: 0 auto;
+
 }
 
 .hero_content {
+
     max-width: 620px;
+
 }
 
 .hero_title {
+
     font-size: 42px;
+
     font-weight: 700;
+
     line-height: 1.3;
+
     letter-spacing: -0.02em;
+
     margin-bottom: 1.25rem;
+
 }
 
 .hero_title span {
+
     font-style: italic;
+
     font-weight: 700;
+
 }
 
 .hero_description {
+
     font-size: 16px;
+
     /* Adicionada a unidade px */
+
     font-weight: 500;
+
     color: #FDFFFC;
+
     margin-bottom: 32px;
+
 }
 
 .hero_buttons {
+
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 12px;
+
 }
 
 .btn {
+
     display: inline-flex;
+
     align-items: center;
+
     justify-content: center;
+
     padding: 12px 18px;
+
     border-radius: 6px;
+
     font-size: 16px;
+
     font-weight: 500;
+
     text-decoration: none;
+
     transition: all 0.25s ease;
+
 }
 
+
 /* Botão Branco */
+
 .btn_primary {
+
     background-color: #FDFFFC;
+
     color: #461873;
+
 }
 
 .btn_primary:hover {
+
     background-color: #CCCCCC;
+
     transform: translateY(-2px);
+
 }
 
+
 /* Botão Roxo */
+
 .btn_secondary {
+
     background-color: #9F21E3;
+
     color: #FDFFFC;
+
 }
 
 .btn_secondary:hover {
+
     background-color: #CB5DF1;
+
     transform: translateY(-2px);
+
 }
 
-/* Breakpoint: Tablet */
-@media (min-width: 768px) {
-    .heroSection {
-        background-image: linear-gradient(to right,
-                rgba(15, 8, 25, 0.85) 0%,
-                rgba(15, 8, 25, 0.4) 100%),
-            url('/assets/home_images/hero/Hero-img_TABLET.ver.png');
-        padding: 4rem 3rem;
-    }
 
-    .hero_title {
-        font-size: 42px;
-        line-height: 1.4;
-    }
+/* CTA / CONTATO */
 
-    .hero_buttons {
-        gap: 22px;
-    }
+.cta-section {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 540px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    margin-top: 120px;
+
 }
+
+
+/* IMAGEM DE FUNDO */
+
+.cta-background {
+
+    position: absolute;
+
+    top: -10%;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 180%;
+
+    background-image: url("/assets/home_images/cta-contato/Cta-contato_image_peoples.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    transform: translateY(0);
+
+    will-change: transform;
+
+    z-index: 1;
+
+}
+
+
+/* OVERLAY ROXO */
+
+.cta-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(90deg,
+
+            rgba(68, 32, 118, 0.35) 0%,
+
+            rgba(90, 44, 154, 0.20) 50%,
+
+            rgba(61, 23, 114, 0.30) 100%);
+
+    z-index: 2;
+
+}
+
+
+/* CONTEÚDO */
+
+.cta-content {
+
+    position: relative;
+
+    z-index: 3;
+
+    width: 100%;
+
+    max-width: 900px;
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+    color: #FDFFFC;
+
+}
+
+
+/* TÍTULO */
+
+.cta-title {
+
+    margin: 0 0 15px;
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    letter-spacing: -0.02em;
+
+    margin-bottom: 1.25rem;
+
+}
+
+
+/* DESCRIÇÃO */
+
+.cta-description {
+
+    max-width: 500px;
+
+    margin: 0 auto 30px;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    color: #FDFFFC;
+
+}
+
+
+/* BOTÕES DO CTA */
+
+.cta-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+
+/* BREAKPOINT: TABLET */
+
 
 /* Breakpoint: Web / Desktop */
+
 @media (min-width: 1024px) {
+
     .heroSection {
+
         background-image: linear-gradient(to right,
+
                 rgba(15, 8, 25, 0.92) 0%,
+
                 rgba(15, 8, 25, 0.45) 55%,
+
                 rgba(15, 8, 25, 0.1) 100%),
+
             url('/assets/home_images/hero/Hero-img_WEB.ver.png');
+
         padding: 0 120px;
+
         /* Margem/padding lateral oficial do site */
+
     }
 
     .hero_title {
+
         font-size: 42px;
+
         line-height: 1.3;
+
     }
 
     .hero_buttons {
+
         gap: 32px;
+
     }
+
 }
 
-/* Ajuste fino para telas mobile pequenas */
-@media (max-width: 480px) {
+
+@media (min-width: 768px) {
+
+    /* HERO */
+
+    .heroSection {
+
+        background-image: linear-gradient(to right,
+
+                rgba(15, 8, 25, 0.85) 0%,
+
+                rgba(15, 8, 25, 0.4) 100%),
+
+            url('/assets/home_images/hero/Hero-img_TABLET.ver.png');
+
+        padding: 4rem 3rem;
+
+    }
+
+
+    .hero_title {
+
+        font-size: 42px;
+
+        line-height: 1.4;
+
+    }
+
+
     .hero_buttons {
+
+        gap: 22px;
+
+    }
+
+
+    /* CTA */
+
+    .cta-section {
+
+        min-height: 500px;
+
+    }
+
+    .cta-background {
+
+        top: -30%;
+
+        bottom: -30%;
+
+        left: 0;
+
+        width: 100%;
+
+        height: auto;
+
+        background-position: center;
+
+    }
+
+    .cta-content {
+
+        max-width: 750px;
+
+        padding: 50px 40px;
+
+    }
+
+    .cta-title {
+
+        font-size: 36px;
+
+        line-height: 1.25;
+
+        margin-bottom: 1.1rem;
+
+    }
+
+    .cta-description {
+
+        max-width: 480px;
+
+        font-size: 15px;
+
+        line-height: 1.5;
+
+        margin-bottom: 28px;
+
+    }
+
+    .cta-buttons {
+
+        gap: 18px;
+
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .cta-section {
+
+        min-height: 520px;
+
+    }
+
+    .cta-background {
+
+        top: -15%;
+
+        bottom: -15%;
+
+        left: -15%;
+
+        width: 130%;
+
+        height: auto;
+
+        background-size: cover;
+
+        background-position: center;
+
+    }
+
+    .cta-overlay {
+
+        background: linear-gradient(90deg,
+
+                rgba(68, 32, 118, 0.48) 0%,
+
+                rgba(90, 44, 154, 0.38) 50%,
+
+                rgba(61, 23, 114, 0.48) 100%);
+
+    }
+
+    .cta-content {
+
+        max-width: 100%;
+
+        padding: 40px 24px;
+
+    }
+
+    .cta-title {
+
+        font-size: 32px;
+
+        line-height: 1.2;
+
+        letter-spacing: -0.015em;
+
+        margin-bottom: 1rem;
+
+    }
+
+    .cta-description {
+
+        max-width: 450px;
+
+        font-size: 15px;
+
+        line-height: 1.5;
+
+        margin-bottom: 25px;
+
+    }
+
+    .cta-buttons {
+
         flex-direction: column;
+
+        gap: 10px;
+
+        width: 100%;
+
+    }
+
+    .cta-buttons .btn {
+
+        width: 100%;
+
+        max-width: 280px;
+
+        text-align: center;
+
+    }
+
+}
+
+
+/* Ajuste fino para telas mobile pequenas */
+
+@media (max-width: 480px) {
+
+    .hero_buttons {
+
+        flex-direction: column;
+
     }
 
     .btn {
+
         width: 100%;
+
     }
 
     .hero_title {
+
         font-size: 32px;
+
         line-height: 1.2;
+
     }
 
     .hero_buttons {
+
         gap: 8px;
+
     }
+
+
+    /* CTA */
+
+    .cta-section {
+
+        min-height: 500px;
+
+    }
+
+    .cta-background {
+
+        top: -15%;
+
+        bottom: -15%;
+
+        left: -25%;
+
+        width: 150%;
+
+        height: auto;
+
+        background-position: center;
+
+    }
+
+    .cta-content {
+
+        padding: 35px 20px;
+
+    }
+
+    .cta-title {
+
+        font-size: 28px;
+
+        line-height: 1.2;
+
+    }
+
+    .cta-description {
+
+        font-size: 14px;
+
+        line-height: 1.5;
+
+        margin-bottom: 22px;
+
+    }
+
+    .cta-buttons {
+
+        gap: 8px;
+
+    }
+
+    .cta-buttons .btn {
+
+        max-width: 260px;
+
+    }
+
 }

@@ -1,11 +1,6 @@
 .Solucoes-bg {
     width: 100%;
-    background: #D9D9D9;
-    background: linear-gradient(0deg,
-            rgba(217, 217, 217, 0) 0%,
-            rgba(234, 191, 250, 0.93) 53%);
 }
-
 
 /* TÍTULO */
 
@@ -24,14 +19,11 @@
 
 .title-content span {
     display: inline-block;
-
     font-size: 16px;
     font-weight: 600;
     font-style: italic;
-
     background-color: #8C07DD;
     color: #FDFFFC;
-
     padding: 8px 24px;
     border-radius: 30px;
 }
@@ -40,7 +32,6 @@
     font-size: 42px;
     line-height: 1.15;
     color: #101010;
-
     margin-top: 32px;
 }
 
@@ -48,7 +39,6 @@
     font-size: 16px;
     line-height: 1.5;
     color: #101010;
-
     margin-top: 12px;
 }
 
@@ -58,7 +48,6 @@
 .solucoes_content {
     margin-left: 120px;
     margin-right: 120px;
-
     display: grid;
     justify-content: center;
     align-items: center;
@@ -70,53 +59,59 @@
 .solucoes-cards_section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 32px;
-
+    gap: 12px;
     margin-top: 64px;
 }
 
 .cards-solucoes {
     background-color: #FDFFFC;
-
-    border: 2px solid #EABFFA;
+    border: 1px solid #EABFFA;
     border-radius: 8px;
-
     padding: 22px;
-
     flex: 1;
+}
+
+.card-sl_content img {
+    width: 52px;
+    height: 52px;
+    object-fit: cover;
 }
 
 .card-sl_content h2 {
     color: #101010;
-
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 800;
     font-style: italic;
-
     line-height: 1.2;
-
     margin-top: 20px;
 }
 
 .card-sl_content p {
     color: #7F7F7F;
-
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-
     margin-top: 12px;
 }
 
+.cards-solucoes:hover {
+    background-color: #fcf5ff;
+}
 
-/* TABLET */
+
+/* ========================================= */
+/* TABLET / NOTEBOOK PEQUENO */
+/* ========================================= */
 
 @media (max-width: 1199px) {
+
     /* TÍTULO */
 
     .title-content {
         margin-top: 84px;
+        max-width: 600px;
     }
+
 
     /* CONTEÚDO */
 
@@ -125,66 +120,244 @@
         margin-right: 84px;
     }
 
+
     /* CARDS */
 
     .solucoes-cards_section {
         grid-template-columns: 1fr 1fr;
         gap: 22px;
-
         margin-top: 54px;
     }
 }
 
+
+/* ========================================= */
+/* TABLET / MOBILE */
+/* ========================================= */
+
 @media (max-width: 769px) {
+
+    /* SEÇÃO */
+
     .Solucoes-bg {
-        margin-left: 22px;
-        margin-right: 22px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    /* TÍTULO */
+
+    .padrao-titulo-EST {
+        padding-left: 22px;
+        padding-right: 22px;
     }
 
     .title-content {
+        width: 100%;
         max-width: 100%;
         margin-top: 64px;
     }
 
     .title-content span {
         font-size: 14px;
+        padding: 7px 20px;
     }
 
     .title-content h1 {
         font-size: 32px;
+        line-height: 1.2;
         margin-top: 28px;
     }
 
     .title-content p {
+        font-size: 16px;
+        line-height: 1.5;
         margin-top: 8px;
     }
+
 
     /* CONTEÚDO */
 
     .solucoes_content {
-        margin-left: 22px;
-        margin-right: 22px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 22px;
+        padding-right: 22px;
+        box-sizing: border-box;
     }
+
 
     /* CARDS */
 
     .solucoes-cards_section {
+        width: 100%;
         grid-template-columns: 1fr;
+        gap: 16px;
         margin-top: 32px;
     }
 
-
-    .card-sl_content img {
-        height: 54px;
+    .cards-solucoes {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 22px;
     }
 
+    .card-sl_content img {
+        width: 44px;
+        height: 44px;
+    }
 
     .card-sl_content h2 {
         font-size: 22px;
     }
 
     .card-sl_content p {
+        font-size: 16px;
         margin-top: 8px;
     }
+}
 
+
+/* ========================================= */
+/* MOBILE */
+/* ========================================= */
+
+@media (max-width: 480px) {
+
+    /* TÍTULO */
+
+    .padrao-titulo-EST {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .title-content {
+        margin-top: 54px;
+    }
+
+    .title-content span {
+        font-size: 13px;
+        padding: 7px 18px;
+    }
+
+    .title-content h1 {
+        font-size: 29px;
+        line-height: 1.18;
+        margin-top: 24px;
+    }
+
+    .title-content p {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-top: 10px;
+    }
+
+
+    /* CONTEÚDO */
+
+    .solucoes_content {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+
+    /* CARDS */
+
+    .solucoes-cards_section {
+        gap: 14px;
+        margin-top: 28px;
+    }
+
+    .cards-solucoes {
+        padding: 20px;
+    }
+
+    .card-sl_content img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .card-sl_content h2 {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-top: 16px;
+    }
+
+    .card-sl_content p {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-top: 8px;
+    }
+}
+
+
+/* ========================================= */
+/* MOBILE PEQUENO */
+/* ========================================= */
+
+@media (max-width: 360px) {
+
+    /* TÍTULO */
+
+    .padrao-titulo-EST {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .title-content {
+        margin-top: 48px;
+    }
+
+    .title-content span {
+        font-size: 12px;
+        padding: 6px 16px;
+    }
+
+    .title-content h1 {
+        font-size: 26px;
+        line-height: 1.18;
+        margin-top: 22px;
+    }
+
+    .title-content p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+
+    /* CONTEÚDO */
+
+    .solucoes_content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    /* CARDS */
+
+    .solucoes-cards_section {
+        gap: 12px;
+        margin-top: 24px;
+    }
+
+    .cards-solucoes {
+        padding: 18px;
+    }
+
+    .card-sl_content img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .card-sl_content h2 {
+        font-size: 19px;
+        margin-top: 14px;
+    }
+
+    .card-sl_content p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
 }
