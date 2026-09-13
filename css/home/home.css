@@ -378,9 +378,8 @@
     /* CTA */
 
     .cta-section {
-
         min-height: 500px;
-
+        margin-top: 32px;
     }
 
     .cta-background {
