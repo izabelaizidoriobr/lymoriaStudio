@@ -521,7 +521,7 @@
 
         width: 100%;
 
-        max-width: 280px;
+        max-width: 100%;
 
         text-align: center;
 
@@ -612,12 +612,6 @@
     .cta-buttons {
 
         gap: 8px;
-
-    }
-
-    .cta-buttons .btn {
-
-        max-width: 260px;
 
     }
 
