@@ -122,3 +122,28 @@ faqItems.forEach((item) => {
     });
 
 });
+
+const backToTop = document.getElementById("backToTop");
+
+if (backToTop) {
+
+    backToTop.addEventListener("click", () => {
+
+        const inicio = document.getElementById("inicio");
+
+        if (inicio) {
+            inicio.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        } else {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            });
+        }
+
+    });
+
+}

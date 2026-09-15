@@ -1,0 +1,526 @@
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    width: 100%;
+    background-color: #FDFFFC;
+    color: #461873;
+    border-top: 1px solid rgba(70, 24, 115, 0.15);
+}
+
+
+/* =========================================================
+   CONTAINER PRINCIPAL
+========================================================= */
+
+.footer-container {
+    margin-left: 120px;
+    margin-right: 120px;
+    padding-top: 70px;
+    padding-bottom: 80px;
+
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1.2fr;
+    gap: 80px;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    display: inline-flex;
+    flex-direction: column;
+
+    color: #461873;
+    text-decoration: none;
+
+    font-size: 25px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.footer-logo small {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-left: 20px;
+}
+
+
+/* =========================================================
+   DESCRIÇÃO
+========================================================= */
+
+.footer-description {
+    margin-top: 22px;
+    margin-bottom: 0;
+
+    font-size: 14px;
+    line-height: 1.4;
+    color: #461873;
+    opacity: 0.75;
+}
+
+
+/* =========================================================
+   CONTATO
+========================================================= */
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    margin-top: 45px;
+}
+
+.footer-contact a {
+    color: #461873;
+    text-decoration: none;
+
+    font-size: 15px;
+    line-height: 1.5;
+
+    transition: opacity 0.3s ease;
+}
+
+.footer-contact a:hover {
+    opacity: 0.6;
+}
+
+
+/* =========================================================
+   REDES SOCIAIS
+========================================================= */
+
+.footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+
+    margin-top: 25px;
+}
+
+.footer-social a {
+    color: #461873;
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+.footer-social a:hover {
+    opacity: 0.6;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   NAVEGAÇÃO
+========================================================= */
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+
+    border-top: 1px solid rgba(70, 24, 115, 0.18);
+}
+
+.footer-navigation a {
+    min-height: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5px;
+
+    border-bottom: 1px solid rgba(70, 24, 115, 0.18);
+
+    color: #461873;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+        padding 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.footer-navigation a span {
+    font-size: 20px;
+    font-weight: 400;
+
+    transition: transform 0.3s ease;
+}
+
+.footer-navigation a:hover {
+    padding-left: 12px;
+    padding-right: 12px;
+
+    background-color: rgba(70, 24, 115, 0.04);
+}
+
+.footer-navigation a:hover span {
+    transform: translate(3px, -3px);
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.footer-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-cta h2 {
+    margin: 0;
+
+    color: #461873;
+
+    font-size: clamp(32px, 3vw, 52px);
+    line-height: 0.98;
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+
+.footer-cta p {
+    max-width: 390px;
+
+    margin-top: 25px;
+
+    color: #461873;
+    opacity: 0.75;
+
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   LINK DO CTA
+========================================================= */
+
+.footer-cta-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 25px;
+
+    color: #461873;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    border-bottom: 1px solid #461873;
+
+    padding-bottom: 8px;
+
+    transition:
+        gap 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.footer-cta-link span {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer-cta-link:hover {
+    gap: 18px;
+    opacity: 0.65;
+}
+
+
+/* =========================================================
+   PARTE INFERIOR
+========================================================= */
+
+.footer-bottom {
+    margin-left: 120px;
+    margin-right: 120px;
+
+    min-height: 80px;
+
+    border-top: 1px solid rgba(70, 24, 115, 0.18);
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    color: #461873;
+    opacity: 0.65;
+
+    font-size: 12px;
+}
+
+.footer-bottom-links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom-links a {
+    color: #461873;
+    text-decoration: none;
+
+    font-size: 12px;
+
+    transition: opacity 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    opacity: 0.6;
+}
+
+
+/* =========================================================
+   VOLTAR PARA O TOPO
+========================================================= */
+
+.back-to-top {
+    justify-self: end;
+
+    border: none;
+    background: transparent;
+
+    color: #461873;
+
+    font-family: inherit;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+.back-to-top span {
+    font-size: 17px;
+}
+
+.back-to-top:hover {
+    opacity: 0.6;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .footer-container {
+        margin-left: 60px;
+        margin-right: 60px;
+
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+
+    .footer-brand {
+        grid-column: 1;
+    }
+
+    .footer-navigation {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+
+    .footer-cta {
+        grid-column: 1;
+    }
+
+    .footer-bottom {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .footer-container {
+        margin-left: 30px;
+        margin-right: 30px;
+
+        padding-top: 55px;
+        padding-bottom: 55px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 50px;
+    }
+
+
+    /* LOGO */
+
+    .footer-logo {
+        font-size: 23px;
+    }
+
+    .footer-logo small {
+        font-size: 17px;
+    }
+
+
+    /* DESCRIÇÃO */
+
+    .footer-description {
+        margin-top: 18px;
+    }
+
+
+    /* CONTATO */
+
+    .footer-contact {
+        margin-top: 30px;
+    }
+
+
+    /* NAVEGAÇÃO */
+
+    .footer-navigation {
+        width: 100%;
+    }
+
+    .footer-navigation a {
+        min-height: 58px;
+    }
+
+
+    /* CTA */
+
+    .footer-cta h2 {
+        font-size: 38px;
+        line-height: 1;
+        letter-spacing: -1.5px;
+    }
+
+    .footer-cta p {
+        max-width: 100%;
+    }
+
+
+    /* BOTTOM */
+
+    .footer-bottom {
+        margin-left: 30px;
+        margin-right: 30px;
+
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .footer-bottom-links {
+        justify-content: flex-start;
+    }
+
+    .back-to-top {
+        align-self: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE PEQUENO
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .footer-container {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        padding-top: 45px;
+        padding-bottom: 45px;
+
+        gap: 42px;
+    }
+
+
+    .footer-description {
+        font-size: 13px;
+    }
+
+
+    .footer-contact a {
+        font-size: 14px;
+    }
+
+
+    .footer-social {
+        gap: 14px;
+    }
+
+
+    .footer-social a {
+        font-size: 12px;
+    }
+
+
+    .footer-navigation a {
+        min-height: 55px;
+        font-size: 13px;
+    }
+
+
+    .footer-cta h2 {
+        font-size: 32px;
+    }
+
+
+    .footer-cta p {
+        font-size: 14px;
+    }
+
+
+    .footer-bottom {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
